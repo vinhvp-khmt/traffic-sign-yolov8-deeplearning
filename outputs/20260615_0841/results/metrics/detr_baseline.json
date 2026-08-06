@@ -1,0 +1,11 @@
+{
+  "model": "DETR",
+  "weights": "/content/traffic-sign-detection-yolo-detr/weights/detr/detr_baseline",
+  "split": "test",
+  "map50": 0.122,
+  "map50_95": 0.0988,
+  "model_size_mb": 166.02,
+  "device": "cuda",
+  "latency_ms": 63.83,
+  "fps": 15.7
+}

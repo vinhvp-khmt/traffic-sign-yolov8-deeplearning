@@ -1,0 +1,16 @@
+class_id,count,class_name,pct,ratio_to_max
+1,787,Red Light,13.09,1.0
+0,774,Green Light,12.87,1.02
+7,468,Speed Limit 30,7.78,1.68
+11,449,Speed Limit 70,7.47,1.75
+12,440,Speed Limit 80,7.32,1.79
+10,422,Speed Limit 60,7.02,1.86
+14,416,Stop,6.92,1.89
+9,404,Speed Limit 50,6.72,1.95
+6,387,Speed Limit 20,6.44,2.03
+3,365,Speed Limit 100,6.07,2.16
+5,356,Speed Limit 120,5.92,2.21
+8,343,Speed Limit 40,5.71,2.29
+13,240,Speed Limit 90,3.99,3.28
+4,139,Speed Limit 110,2.31,5.66
+2,22,Speed Limit 10,0.37,35.77

@@ -1,0 +1,45 @@
+# Datasets and model weights are kept on Google Drive, not in git (see README §Workflow).
+/dataset/
+/weights/
+
+# Ultralytics / training run outputs — regenerated on every run, heavy, machine-specific.
+# /runs/
+
+# Generated results — keep the directory structure (.gitkeep) but not the heavy outputs.
+results/**/*
+!results/**/.gitkeep
+
+# Training logs — keep the clean per-epoch summaries, drop the noisy raw tee dumps.
+logs/*_raw.log
+logs/*.tmp
+
+# Model checkpoints / weights anywhere — heavy, regenerated, and exceed GitHub's 100MB
+# file limit. Lightweight outputs (plots, metrics, csv, sample images) are kept so another
+# tool can read them to build reports/slides.
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.bin
+outputs/**/weights/
+app/outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Personal / presentation material — kept local, not distributed
+/reports/
+/slides/
+configs/data.local.yaml
+
+# Local venv created by run_app.sh
+.venv-app/

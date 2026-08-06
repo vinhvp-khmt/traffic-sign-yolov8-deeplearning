@@ -1,0 +1,43 @@
+# Dependencies for the traffic-sign detection pipeline.
+#
+# Design goal: install cleanly on Google Colab, whose base image already ships compatible
+# torch / numpy / pandas / matplotlib / transformers. We therefore use LOOSE lower bounds
+# (not `==` or `~=`) so pip does NOT try to downgrade/upgrade Colab's pinned stack — hard
+# pins here cause pip's resolver to backtrack forever (ResolutionTooDeep) on Colab.
+#
+# Only packages actually imported by src/ + scripts/ are listed.
+
+# ── Core (preinstalled on Colab; bounds are advisory) ─────────────────────────
+numpy
+pandas
+pyyaml
+matplotlib
+opencv-python
+pillow
+
+# ── YOLO track ────────────────────────────────────────────────────────────────
+ultralytics>=8.2
+
+# ── DETR track ────────────────────────────────────────────────────────────────
+# torch/torchvision come preinstalled on Colab with the right CUDA build — do NOT pin them.
+transformers>=4.40
+timm>=1.0
+pycocotools>=2.0
+
+# ── Evaluation / metrics ──────────────────────────────────────────────────────
+torchmetrics>=1.0
+
+# ── Reporting (PPT generation) ────────────────────────────────────────────────
+python-pptx>=0.6
+
+# ── Dev / testing ─────────────────────────────────────────────────────────────
+pytest>=7.0
+# Phase 2 app (Gradio + Hugging Face)
+gradio
+huggingface_hub
+streamlit>=1.49
+streamlit-webrtc
+av
+
+# Report generation
+python-docx

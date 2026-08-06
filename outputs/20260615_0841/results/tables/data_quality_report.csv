@@ -1,0 +1,5 @@
+split,image,issue_type,detail
+train,FisheyeCamera_1_00802_png.rf.6a502d781364b74f35bfa71832fc1ede.jpg,empty_label,Label file exists but contains no valid boxes
+train,FisheyeCamera_1_00807_png.rf.065f778b2eaf15dd7b5beb90b30c490c.jpg,empty_label,Label file exists but contains no valid boxes
+train,FisheyeCamera_1_00926_png.rf.511cfac04ff48a1fe99b560b4a4fb9e2.jpg,empty_label,Label file exists but contains no valid boxes
+test,FisheyeCamera_1_00922_png.rf.408835a278b9c700eb1a2f358ca58d07.jpg,empty_label,Label file exists but contains no valid boxes
